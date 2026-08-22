@@ -1,5 +1,5 @@
 export default function WhatsAppButton(){
-  const number = "254700000000"; // <-- CHANGE TO YOUR NUMBER
+  const number = "254789338183"; // <-- CHANGE TO YOUR NUMBER
   const msg = encodeURIComponent("Hi, I saw your Canada Jobs site. I need help verifying a job offer.");
   return (
     <a href={`https://wa.me/${number}?text=${msg}`} target="_blank"
