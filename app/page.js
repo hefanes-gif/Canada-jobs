@@ -1,0 +1,6 @@
+import Navbar from '../components/Navbar'
+import FraudAlert from '../components/FraudAlert'
+import Link from 'next/link'
+export default function Home(){
+ return (<main><Navbar/><div className="max-w-6xl mx-auto px-4 py-8"><FraudAlert/><h1 className="text-4xl md:text-5xl font-extrabold mt-8 leading-tight">Discover Legitimate<br/>Canadian Opportunities</h1><p className="text-gray-600 mt-4 text-lg">Verified jobs & travel info. We never charge fees - we link only to official Government of Canada sources.</p><div className="grid md:grid-cols-2 gap-5 mt-8"><Link href="/jobs" className="bg-white border p-8 rounded-[20px] shadow-sm hover:shadow-md transition"><h3 className="font-bold text-xl">💼 Work Opportunities</h3><p className="text-sm text-gray-500 mt-2">Job Bank verified positions</p></Link><Link href="/visit" className="bg-white border p-8 rounded-[20px] shadow-sm hover:shadow-md transition"><h3 className="font-bold text-xl">✈️ Visit Canada</h3><p className="text-sm text-gray-500 mt-2">IRCC official requirements</p></Link></div><p className="text-xs text-gray-400 mt-12 text-center max-w-2xl mx-auto">Disclaimer: We are not affiliated with the Government of Canada. We do not guarantee jobs, visas or immigration. Always verify on canada.ca and jobbank.gc.ca</p></div></main>)
+}
